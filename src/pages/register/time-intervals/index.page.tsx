@@ -84,7 +84,7 @@ export default function ConnectCalendar() {
     },
   })
 
-  const weekDays = getWeekDays()
+  const weekDays = getWeekDays({ short: false })
   const router = useRouter()
 
   const { fields } = useFieldArray({

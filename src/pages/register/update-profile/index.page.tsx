@@ -35,7 +35,7 @@ export default function UpdateProfile() {
   const router = useRouter()
 
   async function handleUpdateProfile(data: IUpdateProfileData) {
-    await api.put('/user/profile', {
+    await api.put('/users/profile', {
       bio: data.bio,
     })
 
